@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="6dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/item_article_list_authorImg"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/icon_author" />
+
+            <TextView
+                android:id="@+id/item_article_list_authorNameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/item_article_list_authorImg"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/item_article_list_authorImg"
+                android:gravity="center"
+                android:text="玉刚说"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/item_article_list_tittleTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="公众号/玉刚说"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/item_article_list_contentTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="内容"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/item_article_list_saveImg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_like" />
+
+            <ImageView
+                android:id="@+id/item_article_list_timeImg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/item_article_list_saveImg"
+                android:src="@drawable/icon_time" />
+
+            <TextView
+                android:id="@+id/item_article_list_timeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/item_article_list_timeImg"
+                android:layout_toRightOf="@id/item_article_list_timeImg"
+                android:gravity="center"
+                android:text="1天前"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/item_article_list_lableTv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/shape_lable_red"
+                android:gravity="center"
+                android:text="公众号"
+                android:textColor="@color/red"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/item_article_list_lableTv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/item_article_list_lableTv1"
+                android:background="@drawable/shape_lable_green"
+                android:gravity="center"
+                android:text="项目"
+                android:textColor="@color/green"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
